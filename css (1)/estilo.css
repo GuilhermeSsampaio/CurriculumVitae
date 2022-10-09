@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+:root{
+    --cor-azul-claro:#8EAADB;
+    --cor-roxo: #6E33B9;
+    --fundo-endereco:#88B4FF;
+    --fundo-telefone:#9FFF84;
+    --fundo-email:#D18F7A;
+    --fundo-site:#DBFFFB;
+    --link-endereco:#5F62FF;
+    --link-telefone:#498638;
+    --link-email:#C28BA8;
+    --link-site:#A4BFBC;
+    --cor-letra-links:#01008D
+    
+ 
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+*, 
+p{
+    margin-left: 0.2rem;
+}
+
+.texto{
+    padding: 0.5rem;
+    letter-spacing: 0.025rem;
+}
+
+.texto p{
+    padding: 0.5rem;
+}
+
+html,
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+#foto-perfil{
+    height:300px;
+}
+
+#container-titulo{
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+
+
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.azul-claro{
+    color: var(--cor-azul-claro);
+}
+
+.roxo{
+    font-size: 1.5rem;
+    color: var(--cor-roxo);
+    
+}
+
+.borda-secoes{
+    border: solid;
+    border-radius: 0.2rem;
+    text-align: center;
+    
+
+}
+
+.texto-centralizado{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.linha{
+    display: flex;
+    transition: all ease-in-out .2s;
+    box-shadow: inset 0 0 0 25px #53a7ea;
+    margin-right:2rem;
+    margin-left: 2rem;
+}
+
+.borda:hover{
+    box-shadow: inset 0 0 0 25px #1d5481;
+
+}
+
+.linha:hover{
+    transform: scale(1.040);
+
+}
+
+
+.linha a{
+    align-self: center;
+    color:var(--cor-links);
+    flex: 5;
+    line-height: 3rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    
+}
+
+
+
+.container-img{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 0.3rem;
+    
+}
+
+#container-endereco{
+    background-color: var(--fundo-endereco);
+}
+
+#container-telefone{
+    background-color: var(--fundo-telefone);
+}
+
+#container-email{
+    background-color: var(--fundo-email);
+}
+
+#container-site{
+    background-color: var(--fundo-site);
+}
+
+.icones{
+    height: 2rem;
+    background-color: var(--cor-roxo);
+}
+
+#link-endereco{
+    background-color: var(--link-endereco);
+
+}
+
+#link-telefone{
+    background-color: var(--link-telefone);
+}
+
+#link-email{
+    background-color: var(--link-email);
+}
+
+#link-site{
+    background-color: var(--link-site);
+}
+
+    @media screen and (min-width: 960px){
+
+    
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+
+    .borda-secoes{
+        border: solid;
+        border-radius: 0.2rem;
+        text-align: center;
+        margin-right: 440px;
+       
+        
+    }
+
+    header{
+        
+    }
+
+    #container-titulo{
+        align-items: flex-start;
+        padding: 1rem;
+      
+        
+    
+    }
+ 
+    #foto-perfil{
+        top: 0;
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
+        height: 600px;
+        width: 30vw;
+        position: fixed;
+        right: 0;
+        
+
+    }
+    
+
+    #vitae{
+        padding-top: 50px;
+        text-align: left;
+    }
+
+      
+    .texto-titulo{
+       text-align: right;
+       margin-right: 450px;
+    }
+
+  
+
+    .texto{
+        width: 65vw;
+    }
+
+    .linha{
+      
+        margin-right: 1px;
+        margin-left: 1px;
+
+        
+    }
+  
+    footer{
+        
+        bottom: 0;
+        display: flex;
+        flex-direction: column;    
+        height: 32vh;   
+        position: fixed;        
+        width: 30vw;  
+        right: 0; 
+
+    }
+     
+  
+
+  
+  
+    
+  
+
+    
+}
